@@ -22,8 +22,20 @@ class Seed
         city: Faker::Address.city
       )
       puts "Added #{i}: Name is #{destination.name}, city is '#{destination.city}', country is '#{destination.country}'."
+
+      5.times do |r|
+        review = Review.create!(
+          review_title: Faker::Book.title,
+          review_body: Faker::Restaurant.review,
+          rating: Faker::Number.between(from: 1, to: 5),
+          user_id: Faker::Number.between(from: 1, to: 99),
+          destination_id: destination.id
+        )
+        puts "Added #{r}: Title is #{review.review_title}, review is '#{review.review_body}', rating is '#{review.rating}', user is '#{review.user_id}', destination id is '#{review.destination_id}'."
+      end
     end
   end
+
 end
 
 Seed.begin
