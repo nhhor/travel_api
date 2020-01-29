@@ -32,17 +32,19 @@ Things you may want to cover:
 * As a user, I want to look up random destinations just for fun.
 
 To do:
-* authentication with bcrypt (& JWT)
+* **authentication with bcrypt (& JWT)**
 * search method
-* sort method
 * authorization to delete if user_id == review user_id
+* sort method
 * random method
+
+* **Paginating an API?**
+* **Using Swagger for Documentation?**
 * Serialization?
-* API Versioning?
-* Using Swagger for Documentation?
-* Paginating an API?
 * Batching API calls?
 * Rate Limiting?
+* API Versioning?
+* more testing?
 
 
 
