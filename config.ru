@@ -4,7 +4,7 @@ require_relative 'config/environment'
 
 
 # EH?????????? below...
-require ('./app')
+# require ('./app')
 
 
 run Rails.application
